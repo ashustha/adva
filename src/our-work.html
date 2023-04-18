@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>adva | Our work</title>
+</head>
+<body>
+    @@include('partials/navbar.html')
+    <main>
+        @@include('partials/leadspace.html',{
+            'hasButtons': false,
+            'title':'Our work',
+            'para':'Discover the ADVA Group brands and the solutions we offer',
+        })
+        @@include('partials/service-we-provide.html')
+    </main>
+    @@include('partials/footer.html',{
+        'title': 'Have a Problem that Needs Solving?',
+        'eyebrow':'Send us a problem brief:',
+        'para':'I’m a <span>business</span>  in the <span>insurance</span> industry facing a problem relating to <span>automation</span> ',
+        'buttonText': 'Next Step'
+    })
+</body>
+</html>

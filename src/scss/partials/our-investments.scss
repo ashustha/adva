@@ -1,0 +1,153 @@
+.our-investments{
+    display: flex;
+    align-items: center;
+    &.bg-dark{
+        background-color:$black;
+        color: $white;
+        aside{
+            a{
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    &.bg-light{
+        background-color:$white;
+        color: $black;
+    }
+    min-height: 800px;
+    @include media(xlm){
+        min-height: 1080px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include media (md) {
+            flex-direction: row;
+        }
+        aside{
+            margin-bottom: 120px;
+            @include media (md) {
+                margin-bottom: 0px;
+            }
+            h5{
+                font-style: italic;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 59px;
+                margin-bottom: 47px;
+            }
+            p{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                img{
+                    margin-left: 18px;
+                }
+            }
+            a{
+                img{
+                    transition: transform 0.2s ease-in-out;
+                }
+                &:hover{
+                    img{
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
+    &__lists{
+        ul{
+            li{
+                font-style: italic;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 70px;
+                cursor: pointer;
+                position: relative;
+                a{
+                    position: relative;
+                    left: 0;
+                    transition: left 0.2s ease;
+                }
+                &:hover{
+                    a{
+                        left: 20px;
+                    }
+                }
+            }
+        }
+        .logos{
+            figure{
+                margin-bottom: 150px;
+                @include media (lg) {
+                    margin-bottom: 220px;
+                }
+                position: relative;
+                .text{
+                    position: absolute;
+                    top: -70px;
+                    @include media (md) {
+                        top: -87px;
+                    }
+                    p{
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            bottom: -4px;
+                            left: 0px;
+                            height: 1px;
+                            width: 100%;
+                            background-color: $grey-dark;
+                            content: '';
+                        }
+                        &::before{
+                            position: absolute;
+                            left: 0px;
+                            height: 30px;
+                            bottom: -33px;
+                            width: 1px;
+                            background-color: $grey-dark;
+                            content: '';
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                &:first-child{
+                    .text{
+                        @include media (sm) {
+                            right: 220px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    @include media (lg) {
+                        margin-left: 300px;
+                    }
+                    .text{
+                        @include media (sm) {
+                            right: 400px;
+                        }
+                        @include media (md) {
+                            right: 110px;
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                    .text{
+                        @include media (sm) {
+                            right: 310px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

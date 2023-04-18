@@ -1,0 +1,48 @@
+.service-we-provide{
+    padding-top: 110px;
+    padding-bottom: 215px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        @include media(lg){
+            flex-direction: row;
+        }
+    }
+    display: flex;
+    flex-wrap: wrap;
+    &__left{
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        @include media(lg){
+            flex-basis: 821px;
+        }
+    }
+    &__right{
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include media(lg){
+            align-items: center;
+        }
+        h5{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 24px;
+        }
+        ul{
+            li{
+                color:$grey-lighter;
+                &::before{
+                    content: "-";
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    
+}

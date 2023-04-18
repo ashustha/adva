@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>adva</title>
+</head>
+<body>
+    @@include('partials/navbar.html')
+    <main>
+        @@include('partials/leadspace.html',{
+            'hasButtons': true,
+            'title':'From Idea to Execution ',
+            'para':'We choose to solve only the most complex problems.',
+        })
+        @@include('partials/solving-complex-problem.html')
+        @@include('partials/portfolio.html')
+        @@include('partials/our-investments.html',{
+            "bg-color" : 'bg-white',
+            "title":'Our Core Businesses',
+            "listitemsShowHide": false,
+            "logos" : true,
+            "listItems": {
+                "listColor" : 'text-black',
+                "list" : []
+            }
+        })
+        @@include('partials/our-investments.html',{
+            "bg-color" : 'bg-dark',
+            "title":'Our Projects',
+            "listitemsShowHide": true,
+            "logos" : false,
+            "listItems": {
+                "listColor" : 'text-white',
+                "list" : [
+                    {
+                        'listItem' : 'ESIC',
+                    },
+                    {
+                        'listItem' : 'Claim Stream',
+                    },
+                    {
+                        'listItem' : 'On Board Pro',
+                    },
+                    {
+                        'listItem' : 'Giftybox',
+                    },
+                    {
+                        'listItem' : 'Barber Pro',
+                    },
+                    {
+                        'listItem' : 'Playbox',
+                    },
+                    {
+                        'listItem' : 'Microsoft LFG',
+                    },
+                ]
+            }
+        })
+        @@include('partials/our-investments.html',{
+            "bg-color" : 'bg-white',
+            "title":'Our Incestments',
+            "listitemsShowHide": true,
+            "logos" : false,
+            'listItems': {
+                "listColor" : 'text-black',
+                "list" : [
+                    {
+                        'listItem' : 'CBDF'
+                    }
+                ]
+            }
+        })
+    </main>
+    @@include('partials/footer.html',{
+        'title': 'Have a Problem that Needs Solving?',
+        'eyebrow':'Send us a problem brief:',
+        'para':'I’m a <span>business</span>  in the <span>insurance</span> industry facing a problem relating to <span>automation</span> ',
+        'buttonText': 'Next Step'
+    })
+</body>
+</html>

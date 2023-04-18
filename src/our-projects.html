@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>adva | Our Projects</title>
+</head>
+<body>
+    @@include('partials/navbar.html')
+    <main>
+        @@include('partials/leadspace.html',{
+            'hasButtons': false,
+            'title':'Our Projects ',
+            'para':'Learn more about our successful business ventures',
+            
+        })
+        @@include('partials/paraWithLogo.html',{
+            "bg-color":'bg-white',
+            "text-color":'text-black',
+            "logo" :'logo-calmstream.svg',
+            "para" : "Claimstream functions as an external claims partner which assumes the responsibility, management, execution and costs of runnning your Large Loss Commercial Recoveries Portfolio. We do this in partnership and collaboration with your business in full transparency, oversight and reporting over the decisions made by our specialised legal professionals.",
+            "website":"www.claimstream.com.au",
+            "footerShowHide": false,
+            "footerTitle": "",
+            "logos": false,
+            "logoList" : {
+                "list":[]
+            },
+            'icons' : false,
+        })
+        @@include('partials/paraWithLogo.html',{
+            "bg-color":'bg-black',
+            "text-color":'text-white',
+            "logo" :'logo-playbox.svg',
+            "para":"New Motion Studio is a digital agency that provides comprehensive solutions to businesses of all sizes. Our services include branding, web design, and marketing to help your company achieve its goals and thrive in the digital landscape. Our team of experts are dedicated to delivering top-quality results that will drive success for your business. Let us help you reach new heights and achieve your vision with our expert support.",
+            "website" : 'www.playbox.gg',
+            "footerShowHide": false,
+            "footerTitle": "",
+            "logos": false,
+            "logoList" : {
+                "list":[]
+            },
+            'icons' : false,
+        })
+
+        @@include('partials/paraWithLogo.html',{
+            "bg-color":'bg-white',
+            "text-color":'text-black',
+            "logo" :'logo-giftbox.svg',
+            "para":"At Macrocon, we are a construction company with over 35 years of experience in the industry. With our team of experts, we have mastered the art of building and can turn your dream home into reality. Whether you're looking to build a new home from the ground up or renovate an existing property, we have the skills and knowledge to make your vision a reality.",
+            "website" : 'www.giftybox.com.au',
+            "footerShowHide": false,
+            "footerTitle": "What we do",
+            "logos": false,
+            "logoList" : {
+                "list":[]
+            },
+            'icons' : false,
+            'iconList' :{
+                "list":[]
+            }
+        })
+    </main>
+    @@include('partials/footer.html',{
+        'title': 'Have a Problem that Needs Solving?',
+        'eyebrow':'Send us a problem brief:',
+        'para':'I’m a <span>business</span>  in the <span>insurance</span> industry facing a problem relating to <span>automation</span> ',
+        'buttonText': 'Next Step'
+    })
+</body>
+</html>

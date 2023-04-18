@@ -1,0 +1,31 @@
+<section class="paraWithLogo @@bg-color @@text-color">
+    <div class="container">
+        <a href="#" class="btn btn-borderless btn-back"><img class="back-icon" src="./img/icons/icon-arrow-left.svg" alt=""> Our Core Businesses</a>
+        <div class="paraWithLogo__body">
+            <img  src="./img/logo/@@logo" alt="">
+            <p>@@para</p>
+            <a target="_blank" href="https://@@website">@@website</a>
+        </div>
+        @@if(footerShowHide){
+            <div class="paraWithLogo__footer">
+                <h5>@@footerTitle</h5>
+                @@if(logos){
+                    <div class="logo-list">
+                        @@for (var i = 0; i < logoList.list.length; i++) {
+                            @@include('../cards/card-a03.html', `+(JSON.stringify(logoList.list[i]))+`)
+                        }
+                        <a href="#" class="see-more">+ More</a>
+                    </div>
+                }
+                @@if(icons){
+                    <div class="icon-list">
+                        @@for (var i = 0; i < iconList.list.length; i++) {
+                            @@include('../cards/card-a04.html', `+(JSON.stringify(iconList.list[i]))+`)
+                        }
+                        <a href="#" class="see-more">+ More</a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>

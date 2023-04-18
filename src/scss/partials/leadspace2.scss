@@ -1,0 +1,55 @@
+.leadspace2{
+    height: 800px;
+    background-image: url('../img/pictures/meeting-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include media(xl){
+        height: 1080px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        @include media(xl){
+            height: 1080px;
+        }
+        justify-content: center;
+        &--text{
+            max-width: 1583px;
+            h1{
+                font-weight: 700;
+                letter-spacing: -2.275px;
+                padding-bottom: 36px;
+                font-size: 70px;
+                line-height: 80px;
+                @include media(xl){
+                    font-size: 91px;
+                    line-height: 102px;
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 38px;
+                color: $grey-lighter;
+                @include media(xl){
+                    font-size: 40px;
+                    line-height: 59px;
+                }
+            }
+            .date{
+                margin-top: 50px;
+                font-size: 22px;
+                line-height: 32px;
+                color: $white;
+                display: flex;
+                gap: 10px;
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,56 @@
+.open-positions{
+    padding-top: 113px;
+    padding-bottom: 121px;
+    &__wrapper{
+        header{
+            padding-bottom: 104px;
+            h4{
+                font-style: italic;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 71px;
+            }
+        }
+        .open-positions__department{
+            margin-bottom: 58px;
+            padding-bottom: 58px;
+            border-bottom: 1px solid $grey-medium ;
+            max-width: 1704px;
+            grid-template-columns: 1fr;
+            display: grid;
+            grid-gap: 20px;
+            &:last-child{
+                border-bottom: none;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            @include media(md){
+                grid-template-columns: 1fr 800px;
+            }
+            @include media(xl){
+                grid-template-columns: 1fr 1015px;
+            }
+            .title{
+                width: 100%;
+                h5{
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 44px;
+                    @include media(lg){
+                        padding-top: 35px;
+                    }
+                }
+                p{
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+            &--vacancies{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    }
+
+}

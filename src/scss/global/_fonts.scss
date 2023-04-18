@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'helvetica_now_display';
+    src: url('#{$font-path}/helveticanowdisplay-black-webfont.woff2') format('woff2'),
+         url('#{$font-path}/helveticanowdisplay-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'helvetica_now_display';
+    src: url('#{$font-path}/helveticanowdisplay-bold-webfont.woff2') format('woff2'),
+         url('#{$font-path}/helveticanowdisplay-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'helvetica_now_display';
+    src: url('#{$font-path}/helveticanowdisplay-light-webfont.woff2') format('woff2'),
+         url('#{$font-path}/helveticanowdisplay-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'helvetica_now_display';
+    src: url('#{$font-path}/helveticanowdisplay-medium-webfont.woff2') format('woff2'),
+         url('#{$font-path}/helveticanowdisplay-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'helvetica_now_display';
+    src: url('#{$font-path}/helveticanowdisplay-regular-webfont.woff2') format('woff2'),
+         url('#{$font-path}/helveticanowdisplay-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
+}

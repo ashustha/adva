@@ -1,0 +1,46 @@
+.navbar{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        .nav-list {
+            display: flex;
+            gap:30px;
+            display: none;
+            @include media(md){
+              display: flex;
+            }
+            @include media(xl){
+              gap:55px;
+            }
+            .nav-item{
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.5;
+              &.active{
+                font-weight: 700;
+              }
+              &:hover{
+                color: $white;
+                text-shadow: 0.8px 0.1px #fff;
+              }
+            }
+          }
+          
+        .nav-logo,
+        .nav-logo-right{
+            img{
+                filter: invert(1);
+            }
+        }
+        .nav-logo{
+          padding-top: 18px;
+          padding-bottom: 18px;
+          @include media(md){
+              margin-left: 150px;
+            }
+        }
+        .nav-logo-right{
+            margin-left: auto;
+        }
+    }
+}

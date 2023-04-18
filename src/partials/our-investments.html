@@ -1,0 +1,45 @@
+<section class="our-investments @@bg-color">
+    <div class="container">
+        <div class="our-investments__wrapper">
+            <div class="col-6">
+                <aside>
+                    <h5>@@title</h5>
+                    <a href="#" class="btn btn-borderless">Discover more <img src="./img/icons/icon-right_arrow_black.svg" alt=""></a>
+                </aside>
+            </div>
+            <div class="col-6">
+                <div class="our-investments__lists">
+                    @@if(listitemsShowHide){
+                        <ul class="@@listItems.listColor">
+                            @@for (var i = 0; i < listItems.list.length; i++) {
+                                @@include('../cards/card-a02.html', `+(JSON.stringify(listItems.list[i]))+`)
+                            }
+                        </ul>
+                    }
+                    @@if(logos){
+                        <div class="logos">
+                            <figure class="corporate_advantage">
+                                <img src="../img/logo/logo-corporate_advantage.svg" alt="">
+                                <div class="text">
+                                    <p>Accounting, Business Consulting & Expert Services</p>
+                                </div>
+                            </figure>
+                            <figure class="newmotion">
+                                <img src="../img/logo/logo-newmotion.svg" alt="">
+                                <div class="text">
+                                    <p>Branding, Web & Marketing</p>
+                                </div>
+                            </figure>
+                            <figure class="macrocon-black">
+                                <img src="../img/logo/logo-macrocon-black.svg" alt="">
+                                <div class="text">
+                                    <p>Residential & Commercial Construction</p>
+                                </div>
+                            </figure>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 

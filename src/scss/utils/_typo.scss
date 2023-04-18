@@ -1,0 +1,74 @@
+h1, .h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    @include media(lg) {
+      font-size: 140px;
+    }
+  }
+
+h1, .h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    @include media(xs) {
+      font-size: 30px;
+    }
+    @include media(sm) {
+      font-size: 40px;
+    }
+    @include media(md) {
+      font-size: 60px;
+    }
+    @include media(lg) {
+      font-size: 100px;
+      line-height: 120px;
+    }
+    @include media(xl) {
+      font-size: 140px;
+      line-height: 206px;
+    }
+  }
+
+h2, .h2 {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    @include media(xs) {
+      font-size: 30px;
+    }
+    @include media(sm) {
+      font-size: 40px;
+    }
+    @include media(md) {
+      font-size: 60px;
+    }
+    @include media(lg) {
+      font-size: 120px;
+      line-height: 130px;
+    }
+    @include media(xl) {
+      font-size: 151px;
+      line-height: 184px;
+    }
+  }
+
+h3, .h3 {
+    line-height: 1.2;
+    font-weight: 700;
+      font-size: 30px;
+    @include media(sm) {
+      font-size: 40px;
+    }
+    @include media(md) {
+      font-size: 60px;
+    }
+    @include media(lg) {
+      font-size: 45px;
+      line-height: 85px;
+    }
+    @include media(xl) {
+      font-size: 62px;
+      line-height: 91px;
+      letter-spacing: -1.55px;
+    }
+  }

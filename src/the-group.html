@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>adva | The Group</title>
+</head>
+<body>
+    @@include('partials/navbar.html')
+    <main>
+        @@include('partials/leadspace.html',{
+            'hasButtons': true,
+            'title':'The group',
+            'para':'Learn more about who we are and what we offer',
+            
+        })
+        @@include('partials/paraWithLogo.html',{
+            "bg-color":'bg-white',
+            "text-color":'text-black',
+            "logo" :'logo-corporate_advantage.svg',
+            "para" : "At Corporate Advantage, we specialize in providing expert business advisory and forensic services to institutions and corporations. Our team of experienced professionals are dedicated to delivering tailored solutions that meet the unique needs of our clients. With a focus on specialized outcomes, we are committed to helping our clients succeed in today's competitive business landscape. ",
+            "website":'www.corporateadvantage.com.au',
+            "footerShowHide": true,
+            "footerTitle": "Clients",
+            "logos": true,
+            "logoList" : {
+                "list":[
+                    {
+                       'logo': 'logo-open_agent.svg'
+                    },
+                    {
+                       'logo': 'logo-nsw.svg'
+                    },
+                    {
+                       'logo': 'logo-airtasker.svg'
+                    },
+                    {
+                       'logo': 'logo-iag.svg'
+                    },
+                    {
+                       'logo': 'logo-uts.svg'
+                    },
+                    {
+                       'logo': 'logo-fairtrade.svg'
+                    },
+                    {
+                       'logo': 'logo-esic.svg'
+                    },
+                    {
+                       'logo': 'logo-jobadder.svg'
+                    },
+                ]
+            },
+            'icons' : false,
+        })
+        @@include('partials/paraWithLogo.html',{
+            "bg-color":'bg-black',
+            "text-color":'text-white',
+            "logo" :'logo-newmotion_white.svg',
+            "para":"New Motion Studio is a digital agency that provides comprehensive solutions to businesses of all sizes. Our services include branding, web design, and marketing to help your company achieve its goals and thrive in the digital landscape. Our team of experts are dedicated to delivering top-quality results that will drive success for your business. Let us help you reach new heights and achieve your vision with our expert support.",
+            "website":'www.newmotionstudio.com.au',
+            "footerShowHide": true,
+            "footerTitle": "Clients",
+            "logos": true,
+            "logoList" : {
+                "list":[
+                    {
+                       'logo': 'logo-mtv.svg'
+                    },
+                    {
+                       'logo': 'logo-nicklodeon.svg'
+                    },
+                    {
+                       'logo': 'logo-f45.svg'
+                    },
+                    {
+                       'logo': 'logo-microsoft.svg'
+                    },
+                    {
+                       'logo': 'logo-uts_light.svg'
+                    },
+                    {
+                       'logo': 'logo-ready_set_dance.svg'
+                    },
+                    {
+                       'logo': 'logo-eone.svg'
+                    },
+                ]
+            },
+            'icons' : false,
+        })
+
+        @@include('partials/paraWithLogo.html',{
+            "bg-color":'bg-white',
+            "text-color":'text-black',
+            "logo" :'logo-macrocon-black.svg',
+            "para":"At Macrocon, we are a construction company with over 35 years of experience in the industry. With our team of experts, we have mastered the art of building and can turn your dream home into reality. Whether you're looking to build a new home from the ground up or renovate an existing property, we have the skills and knowledge to make your vision a reality.",
+            "website":'www.macrocon.com.au',
+            "footerShowHide": true,
+            "footerTitle": "What we do",
+            "logos": false,
+            "logoList" : {
+                "list":[]
+            },
+            'icons' : true,
+            'iconList' :{
+                "list":[
+                    {
+                        'icon' : 'icon-house.svg',
+                        'text' : 'Home & Granny Flat Builds'
+                    },
+                    {
+                        'icon' : 'icon-hammer.svg',
+                        'text' : 'Renovations'
+                    },
+                    {
+                        'icon' : 'icon-building.svg',
+                        'text' : 'Commercial Builds'
+                    },
+                ]
+            }
+        })
+
+
+        @@include('partials/our-investments.html',{
+            "bg-color" : 'bg-dark',
+            "title":'Our Projects',
+            "listitemsShowHide": true,
+            "logos" : false,
+            "listItems": {
+                "listColor" : 'text-white',
+                "list" : [
+                    {
+                        'listItem' : 'ESIC',
+                    },
+                    {
+                        'listItem' : 'Claim Stream',
+                    },
+                    {
+                        'listItem' : 'On Board Pro',
+                    },
+                    {
+                        'listItem' : 'Giftybox',
+                    },
+                    {
+                        'listItem' : 'Barber Pro',
+                    },
+                    {
+                        'listItem' : 'Playbox',
+                    },
+                    {
+                        'listItem' : 'Microsoft LFG',
+                    },
+                ]
+            }
+
+        })
+        @@include('partials/our-investments.html',{
+            "bg-color" : 'bg-white',
+            "title":'Our Incestments',
+            "listitemsShowHide": true,
+            "logos" : false,
+            'listItems': {
+                "listColor" : 'text-black',
+                "list" : [
+                    {
+                        'listItem' : 'CBDF'
+                    }
+                ]
+            }
+        })
+    </main>
+    @@include('partials/footer.html',{
+        'title': 'Have a Problem that Needs Solving?',
+        'eyebrow':'Send us a problem brief:',
+        'para':'I’m a <span>business</span>  in the <span>insurance</span> industry facing a problem relating to <span>automation</span> ',
+        'buttonText': 'Next Step'
+    })
+</body>
+</html>

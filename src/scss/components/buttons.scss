@@ -1,0 +1,38 @@
+.btn{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    &-primary{
+        border : 3px solid $white;
+        padding: 15px 26px 14px 26px;
+        img{
+            transition: transform 0.2s ease-in-out;
+        }
+        &:hover{
+            img{
+                transform: translateX(10px);
+            }
+        }
+    }
+    &-borderless{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        span{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 100%;
+                bottom: -1px;
+                left: 0px;
+                background-color:$white ;
+            }
+        }
+    }
+    img{
+        margin-left: 14px;
+    }
+}
+

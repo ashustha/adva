@@ -1,0 +1,53 @@
+.card-a07{
+    &__header{
+        padding-bottom: 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            height: 8px;
+            width: 100%;
+            background-color: $black;
+            bottom: 0;
+        }
+        h4{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 65px;
+            letter-spacing: -1.1px;
+            margin-bottom: 24px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 31px;
+            color: $grey-lighter;
+            
+        }
+    }
+    &__body{
+        padding-top: 56px;
+        padding-bottom: 37px;
+        &-logo{
+            display: flex;
+            gap: 28px;
+        }
+        h5{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            color: $black;
+        }
+        p{
+            color: $grey-lighter;
+            padding-bottom: 36px;
+            font-size: 20px;
+            line-height: 30px;
+            max-width: 603px;
+            &:last-child{
+                padding-bottom: 0px;
+            }
+        }
+    }
+}

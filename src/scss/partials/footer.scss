@@ -1,0 +1,67 @@
+.footer{
+    background-color: $black;
+    padding-top: 120px;
+    padding-bottom: 64px;
+    color: $white;
+    @include media(lg) {
+        padding-top: 161px;
+    }
+    .h2{
+        margin-bottom: 100px;
+        @include media(lg) {
+            margin-bottom: 157px;
+        }
+    }
+
+    &_body{
+        margin-bottom: 100px;
+        @include media(lg) {
+            margin-bottom: 181px;
+        }
+        p{
+            font-size: 18px;
+            @include media(sm) {
+                font-size: 20px;
+            }
+            @include media(md) {
+                font-size: 30px;
+            }
+            @include media(lg) {
+                font-size: 40px;
+              }
+            &.eyebrow{
+                font-size: 18px;
+                margin-bottom: 14px;
+            }
+    
+            span{
+                 position: relative;
+                 font-style: italic;
+                 cursor: pointer;
+                 &::after{
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background-color: $white;
+                 }
+            }
+        }
+
+    }
+
+    &_cta{
+        text-align: right;
+        .btn{
+            margin-left: auto;
+            display: inline-flex;
+            img{
+                margin-left: 36px;
+            }
+        }
+    }
+
+
+}

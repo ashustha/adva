@@ -1,0 +1,98 @@
+.paraWithLogo{
+    padding-top: 105px;
+    padding-bottom: 39px;
+    &.bg-black{
+        a.btn{
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+    .btn-back{
+        .back-icon{
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover{
+            .back-icon{
+                transform: translateX(-10px);
+            }
+        }
+    }
+    &__body{
+        padding-top: 148px;
+        padding-bottom: 254px;
+        img{
+            padding-bottom: 18px;
+        }
+        p{
+            padding-bottom: 44px;
+            max-width: 1568px;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 44px;
+        }
+        a{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    &__footer{
+        .logo-list{
+            border-top: 1px solid $off-white;
+            padding-top: 54px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow: auto;
+            gap: 20px;
+            @include media(lg){
+                gap: 30px;
+            }
+            @include media(xl){
+                gap: 70px;
+            }
+            /* Style the vertical scroll bar */
+            &::-webkit-scrollbar {
+                width: 5px;
+                height: 5px;
+            }
+            
+            /* Style the thumb (the draggable handle) */
+            &::-webkit-scrollbar-thumb {
+                background-color: $grey-dark;
+                border-radius: 10px;
+            }
+            
+            /* Style the track (the non-draggable area) */
+            &::-webkit-scrollbar-track {
+                background-color: #f1f1f1;
+            }
+            img{
+                scroll-snap-align: start;
+            }
+        }
+        .icon-list{
+            border-top: 1px solid $off-white;
+            padding-top: 54px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 52px;
+        }
+        h5{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            padding-bottom: 18px;
+        }
+        .see-more{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

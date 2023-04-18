@@ -1,0 +1,49 @@
+.job-post{
+    padding: 25px 24px 36px 26px;
+    border: 1px solid $grey-medium;
+    padding-bottom: 58px;
+    border-bottom: 1px solid $grey-medium ;
+    position: relative;
+    .btn{
+        position:absolute;
+        top: 21px;
+        right: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__body{
+        margin-bottom: 26px;
+        h5{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 44px;
+            margin-bottom: 7px;
+        }
+        p{
+            color: $grey-dark;
+            font-size: 22px;
+            line-height: 32px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+        }
+    }
+
+    &__items{
+        gap: 42px;
+        display: flex;
+        .item{
+            display: flex;
+            gap: 10px;
+            p{
+                font-size: 22px;
+                line-height: 32px;
+                color: $grey-dark;
+            }
+        }
+    }
+}

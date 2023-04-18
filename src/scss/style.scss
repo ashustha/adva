@@ -1,0 +1,46 @@
+// Base
+@import 'base/reset';
+@import 'base/variables';
+
+//Mixins
+@import 'mixins/font-smoothing';
+
+//global
+@import 'global/functions';
+@import 'global/fonts';
+@import 'global/responsiveGrid';
+
+// Utils
+@import 'utils/typo';
+@import 'utils/config';
+
+// Components
+@import 'components/buttons';
+
+// Layout
+@import 'layout/grid';
+
+// Partials
+@import 'partials/leadspace';
+@import 'partials/leadspace2';
+@import 'partials/footer';
+@import 'partials/portfolio';
+@import 'partials/navbar';
+@import 'partials/our-investments';
+@import 'partials/paraWithlogo';
+@import 'partials/open-positions';
+@import 'partials/latest-news';
+@import 'partials/news-detail';
+@import 'partials/solving-complex-problem';
+@import 'partials/service-we-provide';
+
+// cards
+@import 'cards/card-a01';
+@import 'cards/card-a02';
+@import 'cards/card-a04';
+@import 'cards/card-a05';
+@import 'cards/card-a06';
+@import 'cards/card-a07';
+
+// Pages
+

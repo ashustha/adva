@@ -1,0 +1,49 @@
+// Define variables for colors
+$black          : #000000;
+$white          : #ffffff;
+$grey-lighter   : #8E8E93;
+$grey-light     : #979797;
+$grey-medium    : #D5D5D5;
+$grey-dark      : #9E9E9E;
+$jet-black      : #1B1B1B;
+$off-white      : #E8E8E8;
+
+@function add-color-classes($color-map) {
+    $classes: ();
+    @each $name, $value in $color-map {
+      $class-name: "text-#{$name}";
+      $classes: map-merge($classes, ($class-name: (color: $value)));
+      $class-name: "bg-#{$name}";
+      $classes: map-merge($classes, ($class-name: (background-color: $value)));
+    }
+    @return $classes;
+  }
+  
+  $color-map: (
+    "black": $black,
+    "white": $white,
+    "grey-lighter": $grey-lighter,
+    "grey-light": $grey-light,
+    "grey-medium": $grey-medium,
+    "grey-dark": $grey-dark,
+    "jet-black": $jet-black
+  );
+  
+  $color-classes: add-color-classes($color-map);
+  
+  @each $class, $properties in $color-classes {
+    .#{$class} {
+      @each $property, $value in $properties {
+        #{$property}: #{$value};
+      }
+    }
+  }
+
+// Define variables for breakpoint sizes
+$breakpoint-xs: 575px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1704px;
+
+$font-path: "../fonts" !default;

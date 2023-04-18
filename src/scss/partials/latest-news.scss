@@ -1,0 +1,15 @@
+.latest-news{
+    padding-bottom: 137px;
+    padding-top: 113px;
+    &__wrapper{
+        header{
+            padding-bottom: 80px;
+            h4{
+                font-style: italic;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 71px;
+            }
+        }
+    }
+}
